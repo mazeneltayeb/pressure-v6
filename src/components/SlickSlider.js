@@ -10,10 +10,7 @@ import SkodaImage from './img/Skoda.png';
 import PEUGEOTImage from './img/PEUGEOT.png';
 import ChevroletImage from './img/Chevrolet.png';
 import RENAULTImage from './img/RENAULT.png';
-// import HyundaiImage from './img/Hyundai.png';
-// import KiaImage from './img/Kia.png';
-// import NissanImage from './img/Nissan.png';
-// import ChevroletImage from './img/Chevrolet.png';
+
 
 const SlickSlider = ({ 
   slides = [], 
@@ -92,6 +89,7 @@ const SlickSlider = ({
     draggable: true,
     swipe: true,
     touchMove: true,
+    variableWidth: false, // تأكد أنها false
     beforeChange: () => setIsDragging(true),
     afterChange: () => setIsDragging(false),
     
@@ -105,6 +103,7 @@ const SlickSlider = ({
         settings: {
           slidesToShow: 4,
           slidesToScroll: 1,
+           variableWidth: false,
         }
       },
       {
@@ -112,6 +111,7 @@ const SlickSlider = ({
         settings: {
           slidesToShow: 3,
           slidesToScroll: 1,
+           variableWidth: false,
         }
       },
       {
@@ -119,6 +119,7 @@ const SlickSlider = ({
         settings: {
           slidesToShow: 3,
           slidesToScroll: 1,
+           variableWidth: false,
         }
       },
       {
@@ -127,7 +128,8 @@ const SlickSlider = ({
           slidesToShow: 2,
           slidesToScroll: 1,
           dots: true,
-          arrows: false
+          arrows: false,
+           variableWidth: false
         }
       }
     ]
