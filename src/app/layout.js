@@ -20,10 +20,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="ar" dir="rtl">
+      
       <body style={{ margin: 0, padding: 0, fontFamily: "sans-serif" }}>
         <ClientLayout>
           <NavigationBar />
-            <div style={{ paddingTop: '76px' }}>
+          {/* حسب ارتفاع الناف بار */}
+            <div style={{ paddingTop: '76px' }}>     
           {children}
            </div>
           {/* <BottomAd /> */}

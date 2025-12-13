@@ -7,9 +7,12 @@ import AdSlot from "@/components/AdSlot";
 // import vedio from "components/vedio/mainVedio.mp4"
 import { Button, Container, Row, Col, Card } from "react-bootstrap";
 import AdvancedVideoPlayer from "@/components/AdvancedVideoPlayer";
-import SlickSlider from '@/components/SlickSlider'
+// import SlickSlider from '@/components/SlickSlider'
 import ProductCategories from "@/components/ProductCategories"
 import Numbers from "@/components/Numbers";
+import SwiperCarSlider from "@/components/SwiperCarSlider";
+import 'swiper/css/bundle';
+
 export default function Home() {
   return (
    <main>
@@ -20,7 +23,14 @@ export default function Home() {
         showMuteIndicator={true}
         autoReplay={true}
       />
-      <SlickSlider/>
+        <SwiperCarSlider 
+        autoPlay={true}
+        delay={3000}
+        showPagination={true}
+        showNavigation={true}
+        loop={true}
+      />
+      {/* <SlickSlider/> */}
   {/* <section id="articles" style={{ padding: "40px 20px" }}>
     <LatestArticles />
   </section> */}
