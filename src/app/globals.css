@@ -254,7 +254,7 @@ background: linear-gradient(90deg, rgba(255, 234, 3, 1) 0%, rgba(254, 247, 117, 
     background: linear-gradient(90deg, rgba(255, 234, 3, 1) 0%, rgba(254, 247, 117, 1) 80%, rgba(255, 247, 130, 1) 100%);
     color: black;
     font-weight: 700;
-    border-radius: 13px;
+    /* border-radius: 13px; */
     border-color: transparent;
     padding: 6px;
 }
@@ -307,10 +307,16 @@ width: 95% !important;
 @media  (min-width: 890px){
 .content-section div div{
   font-size: 2rem;
-  
+  align-self: center !important;
 }
 }
 
+@media  (max-width: 767px){
+.vedio-about{
+     width: 25% !important;
+  align-self: center !important;
+}
+}
 @media  (min-width: 414px){
 .content-section div div{
   font-size: 1.5rem;

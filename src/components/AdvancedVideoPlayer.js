@@ -325,7 +325,9 @@ const AdvancedVideoPlayer = ({
   
   // المحتوى الافتراضي للجزء الأيسر
   const defaultContent = (
-    <div style={{
+    <div className=''
+    
+    style={{
       // padding: '30px',
       padding: "30px 5px",
       height: '100%',
@@ -345,7 +347,7 @@ const AdvancedVideoPlayer = ({
 من نحن      
 </div> */}
       <div 
-       className='main-button'
+       className='main-button vedio-about'
       style={{
         display: 'flex',
         gap: '15px',
@@ -353,6 +355,7 @@ const AdvancedVideoPlayer = ({
         marginBottom: "20px",
         justifyContent: "center",
         width:"50%",
+        // border:"0"
       }}>
 من نحن      
       </div>
@@ -404,7 +407,7 @@ const AdvancedVideoPlayer = ({
           {/* الجزء الثاني: المحتوى */}
       <div className="content-section" style={{
         flex: 1,
-        minWidth: '300px',
+        // minWidth: '300px',
         borderRadius: '12px',
         overflow: 'hidden',
         // boxShadow: '0 5px 20px rgba(0,0,0,0.1)',
