@@ -53,12 +53,10 @@ a {
  padding: 60px 0;
 }
 .latest-articles-section .container{
- 
   display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .latest-articles-section h2 {
@@ -70,10 +68,29 @@ a {
   /* margin-bottom: 40px; */
   /* background-color: var(--mainColor); */
 }
-
-.latest-articles-section div p{
-  max-width: 60%;
+@media (min-width:495px) {
+  .latest-articles-section div p{
+  width: 90%;
 }
+}
+@media (min-width:767px) {
+  .latest-articles-section div p{
+width: 75%;
+}
+}
+@media (min-width:992px) {
+  .latest-articles-section div p{
+width: 50%;
+}
+}
+@media (min-width:1200px) {
+  .latest-articles-section div p{
+width: 40%;
+}
+}
+/* .latest-articles-section div p{
+  max-width: 100%;
+} */
 .article-card {
   transition: all 0.3s ease-in-out;
   border-radius: 12px;
