@@ -49,7 +49,7 @@ export default function Footer() {
             <p>Email: ahmedhaborob3e@gmail.com</p>
             <p>Phone: +201281090459</p>
           </Col>
-           <div className="location col-lg-4 col-md-6 col-sm-12">
+           <div className="location col-md-4">
         <iframe
            src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=250%20Woodbridge%20Center%20Dr,%20Woodbridge,%20NJ%2007095+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
             frameBorder="0"

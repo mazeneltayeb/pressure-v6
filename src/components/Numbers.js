@@ -139,7 +139,9 @@ const Numbers = () => {
   return (
     <section className="latest-articles-section p-3">
       <div className="container">
-        <h2 className="text-center mb-4">الارقام</h2>
+        <h2
+        
+        className="text-center mb-4">الارقام</h2>
         <div className="row">
           {categories.map((category) => (
             <div className="col-md-3 mb-4" key={category.id}>

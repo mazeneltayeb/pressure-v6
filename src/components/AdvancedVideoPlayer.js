@@ -347,24 +347,28 @@ const AdvancedVideoPlayer = ({
 من نحن      
 </div> */}
       <div 
-       className='main-button vedio-about'
+       className='vedio-about main-button'
       style={{
+        fontSize: '21px',
         display: 'flex',
         gap: '15px',
         flexWrap: 'wrap',
         marginBottom: "20px",
         justifyContent: "center",
-        width:"50%",
+        // width:"50%",
+        width:" 100px",
+        height:" 40px",
         // border:"0"
       }}>
 من نحن      
       </div>
       
       <p style={{
-        fontSize: '1.1rem',
+        fontSize: '16px',
         lineHeight: '1.6',
         color: '#555',
-        marginBottom: '25px'
+        marginBottom: '25px',
+        lineHeight: "2.1"
       }}>
        بريشر نحن شركة مصرية متخصصة في استيراد قطع غيار السيارات عالية الجودة من الصين.
 نحرص على توفير منتجات موثوقة بأسعار تنافسية لتلبية احتياجات السوق المصري.
@@ -383,6 +387,10 @@ const AdvancedVideoPlayer = ({
         className='main-button'
         href="/store"
         as={Link}
+        style={{
+             width:" 100px",
+        height:" 40px",
+        }}
        >
           اقرأ المزيد
         </Button>

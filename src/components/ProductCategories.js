@@ -135,7 +135,12 @@ const ProductCategories = () => {
   return (
     <section className="latest-articles-section p-3">
       <div className="container">
-        <h2 className="text-center mb-4">فئات المنتجات</h2>
+        <h2
+        style={{
+          fontSize: "6vh"
+        }}
+        className="text-center m-0 fw-bolder">فئات المنتجات</h2>
+        <p className="text-center text-secondary">حرصت الشركة علي العمل بكامل طاقتها من أجل توسيع مجالاتها في الإنتشار بالسوق المصري</p>
         <div className="row">
           {categories.map((category) => (
             <div className="col-md-3 mb-4" key={category.id}>

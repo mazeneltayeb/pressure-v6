@@ -134,7 +134,7 @@ _يرجى التواصل مع العميل لتأكيد التسجيل_`;
       <Row className="justify-content-center w-100">
         <Col md={8} lg={6}>
           <Card className="shadow-lg border-0">
-            <Card.Header className="bg-success text-white text-center py-4">
+            <Card.Header className=" text-center py-4 registration-title">
               <h3 className="mb-1">📱 إرسال بيانات على الواتساب</h3>
               <p className="mb-0 opacity-75">املأ البيانات وسيتم فتح واتساب مع الرسالة جاهزة</p>
             </Card.Header>
@@ -201,7 +201,7 @@ _يرجى التواصل مع العميل لتأكيد التسجيل_`;
                     name="phone"
                     value={formData.phone}
                     onChange={handleChange}
-                    placeholder="مثال: 01002955430"
+                    placeholder="مثال: 01001111111"
                     isInvalid={!!errors.phone}
                     className="py-2"
                     required
@@ -237,10 +237,10 @@ _يرجى التواصل مع العميل لتأكيد التسجيل_`;
                 <div className="d-grid gap-3">
                   <Button
                     type="submit"
-                    variant="success"
+                    // variant="success"
                     size="lg"
                     disabled={loading}
-                    className="py-3 fw-bold"
+                    className="py-3 fw-bold registration-title"
                   >
                     {loading ? (
                       <>
@@ -248,18 +248,18 @@ _يرجى التواصل مع العميل لتأكيد التسجيل_`;
                           as="span"
                           animation="border"
                           size="sm"
-                          className="me-2"
+                          className="me-2 "
                         />
                         جاري فتح الواتساب...
                       </>
                     ) : (
                       <>
-                        📤 فتح واتساب للإرسال
+                        📤 ارسال الطلب 
                       </>
                     )}
                   </Button>
 
-                  <Button
+                  {/* <Button
                     type="button"
                     variant="outline-secondary"
                     size="lg"
@@ -267,7 +267,7 @@ _يرجى التواصل مع العميل لتأكيد التسجيل_`;
                     className="py-3"
                   >
                     ↩️ العودة لقائمة المستخدمين
-                  </Button>
+                  </Button> */}
                 </div>
               </Form>
             </Card.Body>
@@ -285,11 +285,16 @@ _يرجى التواصل مع العميل لتأكيد التسجيل_`;
           {/* تعليمات الاستخدام */}
           <Card className="mt-4 border-0 shadow-sm">
             <Card.Body className="p-3">
-              <h5 className="text-success mb-3">📋 خطوات الاستخدام:</h5>
+              <h5 className=" mb-3">📋 خطوات الاستخدام:</h5>
               <div className="row">
                 <div className="col-md-6 mb-3">
-                  <div className="d-flex align-items-start">
-                    <div className="bg-success text-white rounded-circle p-2 me-3">1</div>
+                  <div className="d-flex align-items-center fw-bold">
+                    <div className="registration-title rounded-circle p-2 me-3 d-flex justify-content-center align-items-center ms-3"
+                        style={{
+                          width:"30px",
+                          height:"30px"
+                        }}
+                    >1</div>
                     <div>
                       <h6 className="fw-bold mb-1">املأ البيانات</h6>
                       <p className="text-muted small mb-0">املأ جميع الحقول المطلوبة</p>
@@ -297,17 +302,29 @@ _يرجى التواصل مع العميل لتأكيد التسجيل_`;
                   </div>
                 </div>
                 <div className="col-md-6 mb-3">
-                  <div className="d-flex align-items-start">
-                    <div className="bg-success text-white rounded-circle p-2 me-3">2</div>
+                  <div className="d-flex align-items-center fw-bold">
+                    <div className="registration-title rounded-circle p-2 me-3 d-flex justify-content-center align-items-center ms-3"
+                        style={{
+                          width:"30px",
+                          height:"30px"
+                        }}
+                    >
+                      2</div>
                     <div>
-                      <h6 className="fw-bold mb-1">اضغط فتح واتساب</h6>
-                      <p className="text-muted small mb-0">سيتم فتح نافذة جديدة</p>
+                      <h6 className="fw-bold mb-1">اضغط على ارسال الطلب</h6>
+                      <p className="text-muted small mb-0">  سيتم ارسال البيانات على الواتساب </p>
                     </div>
                   </div>
                 </div>
                 <div className="col-md-6 mb-3">
-                  <div className="d-flex align-items-start">
-                    <div className="bg-success text-white rounded-circle p-2 me-3">3</div>
+                  <div className="d-flex align-items-center fw-bold">
+                    <div className="registration-title rounded-circle p-2 me-3 d-flex justify-content-center align-items-center ms-3"
+                        style={{
+                          width:"30px",
+                          height:"30px"
+                        }}
+                    >
+                      3</div>
                     <div>
                       <h6 className="fw-bold mb-1">راجع الرسالة</h6>
                       <p className="text-muted small mb-0">ستجد الرسالة مرتبة جاهزة</p>
@@ -315,11 +332,17 @@ _يرجى التواصل مع العميل لتأكيد التسجيل_`;
                   </div>
                 </div>
                 <div className="col-md-6 mb-3">
-                  <div className="d-flex align-items-start">
-                    <div className="bg-success text-white rounded-circle p-2 me-3">4</div>
+                  <div className="d-flex align-items-center fw-bold my-1">
+                    <div className="registration-title rounded-circle p-2 me-3 d-flex justify-content-center align-items-center ms-3"
+                        style={{
+                          width:"30px",
+                          height:"30px"
+                        }}
+                    >
+                      4</div>
                     <div>
-                      <h6 className="fw-bold mb-1">اضغط إرسال</h6>
-                      <p className="text-muted small mb-0">أرسل الرسالة ليصلني</p>
+                      <h6 className="fw-bold mb-1">سوف يتم انشاء حساب لك مجانا           </h6>
+                      <p className="text-muted small mb-0">وسوف يتم التواصل معك من خلالنا     </p>
                     </div>
                   </div>
                 </div>

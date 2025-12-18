@@ -22,7 +22,12 @@ const LatestArticles = () => {
   return (
     <section className="latest-articles-section p-3">
       <div className="container">
-        <h2 className="text-center mb-4">أحدث المقالات</h2>
+        <h2
+           style={{
+          fontSize: "6vh"
+        }}
+        className="text-center m-0 fw-bolder">أحدث المقالات</h2>
+         <p className="text-center text-secondary">حرصت الشركة علي العمل بكامل طاقتها من أجل توسيع مجالاتها في الإنتشار بالسوق المصري</p>
         <div className="row">
           {articles.map((article) => (
             <div key={article.id} className="col-md-4 mb-4">
