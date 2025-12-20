@@ -114,7 +114,7 @@ export default function NavigationBar() {
       {/* <Container> */}
     
     <Navbar.Brand as={Link} href="/" onClick={closeNavbar}>
-            <Image src={imgLogo} alt="Logo" width={125} height={50} />
+            <Image src={imgLogo} alt="Logo" width={100} height={40} />
         </Navbar.Brand>
         {/* زر القائمة المخصص - بدون حدود وحجم صغير - يظهر فقط في الشاشات الصغيرة */}
         <button

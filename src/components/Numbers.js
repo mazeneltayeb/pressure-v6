@@ -142,10 +142,16 @@ const Numbers = () => {
         <h2
         
         className="text-center mb-4">الارقام</h2>
-        <div className="row">
+                <p className="text-center text-secondary">حرصت الشركة علي العمل بكامل طاقتها من أجل توسيع مجالاتها في الإنتشار بالسوق المصري</p>
+
+        <div className="row" style={{
+          display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+        }}>
           {categories.map((category) => (
-            <div className="col-md-3 mb-4" key={category.id}>
-              <Card className="article-card numbers-card shadow-sm border-0 h-100">
+            <div className="col-md-3 mb-4" key={category.id} style={{minWidth:"300px"}}>
+              <Card className="numbers-card shadow-sm border-0 h-100 ">
                 {/* <Card.Img
                   variant="top"
                   src={category.image.src}

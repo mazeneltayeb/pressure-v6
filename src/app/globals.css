@@ -42,21 +42,23 @@ a {
   text-decoration: none;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
   }
-}
+} */
 
 /* 🎨 قسم المقالات */
 .latest-articles-section{
  padding: 60px 0;
 }
 .latest-articles-section .container{
+ 
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
 }
 
 .latest-articles-section h2 {
@@ -68,29 +70,17 @@ a {
   /* margin-bottom: 40px; */
   /* background-color: var(--mainColor); */
 }
-@media (min-width:495px) {
-  .latest-articles-section div p{
-  width: 90%;
-}
-}
 @media (min-width:767px) {
   .latest-articles-section div p{
-width: 75%;
+  max-width: 60%;
 }
 }
-@media (min-width:992px) {
+
+@media (min-width:980px) {
   .latest-articles-section div p{
-width: 50%;
+  max-width: 50%;
 }
 }
-@media (min-width:1200px) {
-  .latest-articles-section div p{
-width: 40%;
-}
-}
-/* .latest-articles-section div p{
-  max-width: 100%;
-} */
 .article-card {
   transition: all 0.3s ease-in-out;
   border-radius: 12px;
@@ -232,6 +222,15 @@ footer {
 }
 
 /* navbar */
+@media (max-width:992px) {
+  .navbar{
+  padding: 0;
+}
+.nav-bar-paddingTop{
+padding-top: 50px !important;
+}
+}
+
 .navbar .nav-link{
    border-top: white 1px solid;
    color: black;

@@ -25,7 +25,7 @@ export default function RootLayout({ children }) {
         <ClientLayout>
           <NavigationBar />
           {/* حسب ارتفاع الناف بار */}
-            <div style={{ paddingTop: '76px' }}>     
+            <div className="nav-bar-paddingTop" style={{ paddingTop: '73px' }}>     
           {children}
            </div>
           {/* <BottomAd /> */}
